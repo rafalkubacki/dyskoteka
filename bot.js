@@ -17,8 +17,7 @@ const bot = new Client({
   ],
 });
 
-const token =
-  "MTMwMTY1MDIxMjkzNDI1NDYzNQ.Gr92_B.SorMkZPXoRHow2342AgIpqs0GeTV0oUhDq3yMI";
+const token = process.env.DISCORD_TOKEN;
 const queue = new Map(); // Holds the music queue for each guild
 
 bot.once("ready", () => {
